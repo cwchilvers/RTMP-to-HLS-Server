@@ -1,4 +1,5 @@
 const NodeMediaServer = require('node-media-server');
+const { deleteChunks } = require('./utils/deleteChunks');
 
 const config = {
   rtmp: {
@@ -26,6 +27,10 @@ const config = {
     ]
   }
 };
+
+setInterval(() => {
+  deleteChunks('./media');
+}, 10000);
 
 const nms = new NodeMediaServer(config);
 nms.run();

@@ -4,32 +4,15 @@ package-lock.json
 
 # Dependency directories
 npm-debug.log
-yarn-error.log
-pnpify/
-
-# Runtime data
-pids
-*.pid
-*.log
 
 # Dependency directories
 node_modules/
-jspm_packages/
 
 # Optional npm cache directory
 .npm/
 
-# Optional eslint cache
-.eslintcache
-
-# Optional flowtype cache
-.flow-typed/
-
 # Editor directories and files
 .vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
 
 # OS-specific files
 .DS_Store
