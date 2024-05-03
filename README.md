@@ -1,5 +1,5 @@
 <h1 align="center"> 
-    Self-Hosted RTMP Server
+    RTMP to HLS Server
 </h1>
 
 
@@ -14,7 +14,7 @@
 4. [Contact Information](#contact-information)
 
 ## Description
-A self-hosted RTMP server for handling video streaming from an RTMP client (such as OBS) so that it can be played back in a web browser. The server is built using Node.js and the `node-media-server` package. FFmpeg is used to transcode the video stream to HLS format, which can be played back in a web browser. The FFmpeg binary is included in the repository, and is compressed using UPX to reduce the file size.
+A server for handling video streaming from an RTMP client (such as OBS) so that it can be played back in a web browser. The server is built using Node.js and the `node-media-server` package. FFmpeg is used to transcode the video stream to HLS format, which can be played back in a web browser. The FFmpeg binary is included in the repository, and is compressed using UPX to reduce the file size.
 
 ## Usage
 To use this server, you will need to have Node.js installed on your machine. You can install Node.js from the [official website](https://nodejs.org/en/). Once you have Node.js installed, you can clone this repository and run the following commands to start the server:
