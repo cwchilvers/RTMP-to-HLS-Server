@@ -1,4 +1,5 @@
 const NodeMediaServer = require('node-media-server');
+const { deleteStreams } = require('./utils/deleteStreams');
 const { deleteChunks } = require('./utils/deleteChunks');
 
 const config = {
@@ -27,6 +28,8 @@ const config = {
     ]
   }
 };
+
+deleteStreams('./media');
 
 setInterval(() => {
   deleteChunks('./media');
