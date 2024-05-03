@@ -29,6 +29,7 @@ This will start the RTMP server on port 1935. You can then use an RTMP client (s
 ## Technologies Used
 * [Node.js](https://nodejs.org/en/)
 * [node-media-server](https://www.npmjs.com/package/node-media-server)
+* [CORS](https://www.npmjs.com/package/cors)
 * [FFmpeg](https://www.ffmpeg.org/)
 * [UPX](https://upx.github.io/)
 
