@@ -1,6 +1,7 @@
 const NodeMediaServer = require('node-media-server');
 const { deleteStreams } = require('./utils/deleteStreams');
 const { deleteChunks } = require('./utils/deleteChunks');
+const cors = require('cors');
 
 const config = {
   rtmp: {
@@ -36,4 +37,14 @@ setInterval(() => {
 }, 10000);
 
 const nms = new NodeMediaServer(config);
+
+const events = ['preConnect', 'postConnect', 'doneConnect', 'prePublish', 'postPublish', 'donePublish', 'prePlay', 'postPlay', 'donePlay'];
+
+events.forEach(eventName => {
+  nms.on(eventName, (id, ...args) => {
+    console.log(`[NodeEvent on ${eventName}]`, `id=${id} args=${JSON.stringify(args)}`);
+  });
+});
+
 nms.run();
+
