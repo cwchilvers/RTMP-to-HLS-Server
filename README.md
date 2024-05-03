@@ -14,7 +14,7 @@
 4. [Contact Information](#contact-information)
 
 ## Description
-A basic self-hosted RTMP server that can be used to stream video content. This server is built using Node.js and the `node-media-server` package along with FFmpeg for transcoding. 
+A self-hosted RTMP server for handling video streaming from an RTMP client (such as OBS). This server is built using Node.js and the `node-media-server` package. FFmpeg is used to handle the video encoding and decoding. The FFmpeg binary is included in the repository, but it is compressed using UPX to reduce the file size.
 
 ## Usage
 To use this server, you will need to have Node.js installed on your machine. You can install Node.js from the [official website](https://nodejs.org/en/). Once you have Node.js installed, you can clone this repository and run the following commands to start the server:
@@ -27,9 +27,10 @@ npm start
 This will start the RTMP server on port 1935. You can then use an RTMP client (such as OBS) to stream video content to the server.
 
 ## Technologies Used
-* Node.js
+* [Node.js](https://nodejs.org/en/)
 * [node-media-server](https://www.npmjs.com/package/node-media-server)
 * [FFmpeg](https://www.ffmpeg.org/)
+* [UPX](https://upx.github.io/)
 
 ## Contact Information
 <p align="center">
