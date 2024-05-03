@@ -1,5 +1,5 @@
 <h1 align="center"> 
-    Self-Hosted RTMP to HLS Server
+    RTMP to HLS Server
 </h1>
 
 
