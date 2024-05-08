@@ -4,6 +4,7 @@
 
 
 <p align="center">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge" alt="JavaScript">    
     <img src="https://img.shields.io/badge/Node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
 </p>
 
@@ -27,7 +28,10 @@ npm start
 This will start the RTMP server on port 1935. You can then use an RTMP client (such as OBS) to stream video content to the server.
 
 ## Technologies Used
+* JavaScript
 * [Node.js](https://nodejs.org/en/)
+
+## Credits
 * [node-media-server](https://www.npmjs.com/package/node-media-server)
 * [CORS](https://www.npmjs.com/package/cors)
 * [FFmpeg](https://www.ffmpeg.org/)
